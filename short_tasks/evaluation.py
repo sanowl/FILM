@@ -1,7 +1,6 @@
 # This source code is licensed under the MIT license
 
 import json
-import pdb
 
 from utils import get_final_result_gsm8k, get_final_result_math, get_csqa_match
 
@@ -75,7 +74,7 @@ if __name__ == "__main__":
                         acc_list.append(score)
 
                     else:
-                        pdb.set_trace()
+                        pass
 
             print('acc:', sum(acc_list) / len(acc_list))
 
